@@ -15,7 +15,7 @@ open -a "Google Chrome" dashboard1.html
 
 
 
-https://github.com/wslukaa/Comp-4462-Data-Visualization-Final-Project/blob/master/59380914_432303314253761_6198328395919523840_n.jpg
+![alt text](https://github.com/wslukaa/Comp-4462-Data-Visualization-Final-Project/blob/master/59380914_432303314253761_6198328395919523840_n.jpg)
 
 Enjoy!
 
