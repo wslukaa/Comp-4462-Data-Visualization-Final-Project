@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Traffic snapshot images </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Traffic snapshot images </h1>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://datastudio-api.hkstp.org:443/Trafficsnapshotimages/v1.0/nearest-traffic-snapshot-cameras?lat=22.425982&long=114.211573",
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader("Authorization", "Basic " + window.btoa("f63c2d16da399ba95f912ee34f54fcda"));
+                },
+                success: function (result) {
+                    console.log(arguments);
+                    console.log(result);
+                }
+            });
+        })
+
+        //XML Version
+
+        // var xmlhttp;
+        // if (window.XMLHttpRequest) { // code for modern browsers
+        //     xmlhttp = new XMLHttpRequest();
+        // } else { // code for old IE browsers
+        //     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        // }
+
+        // xmlhttp.onreadystatechange = function () {
+        //     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        //         var parser = new DOMParser();
+        //         var xmlDoc = parser.parseFromString(xmlhttp.responseText,"text/xml");
+        //         var jsonDoc = xmlToJson(xmlDoc);
+        //         console.log(jsonDoc.ChargingStationData.stationList.station[0].lat);
+        //         console.log(jsonDoc);
+        //     }
+        // }
+
+        // var token = 'f63c2d16da399ba95f912ee34f54fcda';
+        // xmlhttp.open("GET", "https://datastudio-api.hkstp.org:443/ElectricChargingLocations/v1.0.0/GetChargingSectionXML.aspx?lang=en", true);
+        // xmlhttp.setRequestHeader('Authorization', 'Bearer ' + token);
+        // xmlhttp.send();
+
+        // // Changes XML to JSON
+        // function xmlToJson(xml) {
+
+        //     // Create the return object
+        //     var obj = {};
+
+        //     if (xml.nodeType == 1) { // element
+        //         // do attributes
+        //         if (xml.attributes.length > 0) {
+        //             obj["@attributes"] = {};
+        //             for (var j = 0; j < xml.attributes.length; j++) {
+        //                 var attribute = xml.attributes.item(j);
+        //                 obj["@attributes"][attribute.nodeName] = attribute.nodeValue;
+        //             }
+        //         }
+        //     } else if (xml.nodeType == 3) { // text
+        //         obj = xml.nodeValue;
+        //     }
+
+        //     // do children
+        //     if (xml.hasChildNodes()) {
+        //         for (var i = 0; i < xml.childNodes.length; i++) {
+        //             var item = xml.childNodes.item(i);
+        //             var nodeName = item.nodeName;
+        //             if (typeof (obj[nodeName]) == "undefined") {
+        //                 obj[nodeName] = xmlToJson(item);
+        //             } else {
+        //                 if (typeof (obj[nodeName].push) == "undefined") {
+        //                     var old = obj[nodeName];
+        //                     obj[nodeName] = [];
+        //                     obj[nodeName].push(old);
+        //                 }
+        //                 obj[nodeName].push(xmlToJson(item));
+        //             }
+        //         }
+        //     }
+        //     return obj;
+        // };
+    </script>
+
+</body>
+
+</html>
