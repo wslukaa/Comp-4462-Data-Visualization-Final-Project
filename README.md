@@ -17,5 +17,8 @@ open -a "Google Chrome" dashboard1.html
 
 ![alt text](https://github.com/wslukaa/Comp-4462-Data-Visualization-Final-Project/blob/master/59380914_432303314253761_6198328395919523840_n.jpg)
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/WZQVZUmFcBQ/0.jpg)](https://www.youtube.com/watch?v=WZQVZUmFcBQ "FunVis video")
+
+
 Enjoy!
 
