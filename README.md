@@ -19,6 +19,8 @@ open -a "Google Chrome" dashboard1.html
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/WZQVZUmFcBQ/0.jpg)](https://www.youtube.com/watch?v=WZQVZUmFcBQ "FunVis video")
 
+Demo Video Link: https://www.youtube.com/watch?v=WZQVZUmFcBQ
+
 
 Enjoy!
 
