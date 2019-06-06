@@ -1,5 +1,7 @@
 # Comp-4462-Data-Visualization-Final-Project
 
+Course Grade: A received
+
 It is a visualization project on the addmission for US institutions on undergraduates.
 
 You may need a tableau account to see our visualization, and additional permission approval from us.
